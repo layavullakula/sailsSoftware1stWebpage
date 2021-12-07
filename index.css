@@ -1,38 +1,71 @@
-.bg-container {
-  background-image: url("https://qph.fs.quoracdn.net/main-qimg-ff44d2d3eecca9d4dc63b8e17a918a2b-c");
-  height: 85vh;
-  background-size: 100% 100%;
+*{
+    margin: 0px;
 }
-.tourism-card {
-  text-align: center;
-  background-color: white;
-  border-top-left-radius: 70px;
-  border-top-right-radius: 70px;
-  padding: 5px;
-  height: 10vh;
-  margin-left: 5px;
-  margin-right: 5px;
+.bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-.button {
-  color: white;
-  background-color: #5a3834;
-  width: 138px;
-  height: 36px;
-  margin-top: 15px;
-  border-width: 0px;
-  border-radius: 20px;
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
 }
-.main-heading {
-  font-family: "Roboto";
-  font-size: 60px;
+.heading{
+    font-size: 70px;
+    color: line;
+    background: -webkit-linear-gradient(yellow, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.paragraph {
-  font-family: "Roboto";
-  font-size: 30px;
+.card-a{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
 }
 
-.aff{
-  color: white;
-  text-decoration: none;
+.card-j{
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    font-size: 60px;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+.card{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.js-card, .a-card{
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    height: 60px;
+}
+.a-card{
+    background: white;
+    margin-bottom: 10px;
+}
+.js-card{
+    background: black;
+}
+.a-a{
+    color: red;
+}
+.js-a{
+    color: white;
+}
+a{
+    text-decoration: none;
 }

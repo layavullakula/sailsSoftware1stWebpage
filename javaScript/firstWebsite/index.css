@@ -1,0 +1,38 @@
+.bg-container {
+  background-image: url("https://qph.fs.quoracdn.net/main-qimg-ff44d2d3eecca9d4dc63b8e17a918a2b-c");
+  height: 85vh;
+  background-size: 100% 100%;
+}
+.tourism-card {
+  text-align: center;
+  background-color: white;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  padding: 5px;
+  height: 10vh;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.button {
+  color: white;
+  background-color: #5a3834;
+  width: 138px;
+  height: 36px;
+  margin-top: 15px;
+  border-width: 0px;
+  border-radius: 20px;
+}
+.main-heading {
+  font-family: "Roboto";
+  font-size: 60px;
+}
+.paragraph {
+  font-family: "Roboto";
+  font-size: 30px;
+}
+
+.aff{
+  color: white;
+  text-decoration: none;
+}
