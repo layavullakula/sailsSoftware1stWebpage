@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="./game.css" />
+        <script type="text/javascript" src="./game.js"></script>
         <title>Game</title>
     </head>
     <body>
-        <div>
-            <input />
-            <button>Check</button>
-        </div>
-        <div>
+        <div id="wholeBg" class="bg">
+                <div style="display: flex; justify-content: space-around; align-items: center;min-width: 100vw;">
+                    <h1 id="cover" >
+                        Firstly, click on generate Button to generate a number
+                    </h1>
+                    <div>
+                        <h1>Score: <span id="score">20</span></h1>
+                        <h1>High Score: <span id="maxScore">0</span></h1>
+                    </div>
+                </div>
+                <div>
+                    <input placeholder="Guess The Number" id="guessInput" class="ndis" />
+                    <button id="checkBtn" class="ndis" onclick="generateNumbe()">Check Number</button>
+                </div>
+                <h2 id="outpuText"></h2>
             
+            <button id="generateBtn" onclick="generateNumber()">Generate Number </button>
+            
+            <button onclick="restartGame()">Restart</button>
         </div>
     </body>
 </html>
