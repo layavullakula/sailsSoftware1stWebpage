@@ -11,7 +11,7 @@ function generateNumber(){
 
 function generateNumbe(){
     guessedNumber = guessInput.value
-    console.log(generatedNumber, score.textContent)
+    console.log(generatedNumber,guessedNumber, score.textContent)
     if (generatedNumber < guessedNumber){
         outpuText.textContent = "Too High"
         score.textContent = parseInt(score.textContent)> 0 ?  parseInt(score.textContent) - 1 : gameEnded()
@@ -22,11 +22,13 @@ function generateNumbe(){
         score.textContent = parseInt(score.textContent)> 0 ?  parseInt(score.textContent) - 1 : gameEnded()
         wholeBg.classList.remove("wrg1")
         wholeBg.classList.add("wrg2")
-    }else{
+    }else if (generatedNumber === guessedNumber){
         outpuText.textContent = "Right"
         maxScore.textContent = parseInt(maxScore.textContent)<parseInt(score.textContent) ? score.textContent : maxScore.textContent
         wholeBg.classList.remove("wrg2", "wrg1")
         wholeBg.classList.add("crt")
+    }else{
+        alert("Input Number")
     }
 }
 

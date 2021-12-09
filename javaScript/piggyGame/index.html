@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./index.css" type="text/css" />
+        <title>Game</title>
+    </head>
+    <body>
+        <div style="display: flex;justify-content: space-around;min-width: 100vw;align-items: center;text-align: center;">
+            <div>
+                <h1>Player 1</h1>
+                <h1 id="score1">0</h1>
+            </div>
+            <div style="display: flex;flex-direction: column;justify-content: space-around;align-items: center;min-height: 90vh;text-align: center;">
+                <img id="ppp" src="dices/diceSide.jpg" alt="dice" />
+                <div>
+                    <button id="rollDice">Roll Dice</button>
+                    <p id="switch">Player 1</p>
+                </div>
+            </div>
+            <div>
+                <h1>Player 2</h1>
+                <h1 id="score2" >0</h1>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
