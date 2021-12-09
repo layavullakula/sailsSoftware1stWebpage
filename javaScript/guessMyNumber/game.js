@@ -22,13 +22,11 @@ function generateNumbe(){
         score.textContent = parseInt(score.textContent)> 0 ?  parseInt(score.textContent) - 1 : gameEnded()
         wholeBg.classList.remove("wrg1")
         wholeBg.classList.add("wrg2")
-    }else if (generatedNumber === guessedNumber){
+    }else{
         outpuText.textContent = "Right"
         maxScore.textContent = parseInt(maxScore.textContent)<parseInt(score.textContent) ? score.textContent : maxScore.textContent
         wholeBg.classList.remove("wrg2", "wrg1")
         wholeBg.classList.add("crt")
-    }else{
-        alert("Input Number")
     }
 }
 
