@@ -1,4 +1,15 @@
+*{
+    margin: 0px;
+}
+
 #ppp{
+    height: 150px;
+    width: 150px;
+}
+#rollDice{
     height: 50px;
-    width: 50px;
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
 }
