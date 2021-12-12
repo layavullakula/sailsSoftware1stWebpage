@@ -1,9 +1,14 @@
 let generatedNumber
 let guessedNumber
 
+
 function generateNumber(){
+    console.log("cover",cover)
+
     generatedNumber = Math.trunc(Math.random()*100)+1
     cover.textContent = "Number generated, Now input the number to check" 
+    console.log("cover",cover)
+
     generateBtn.classList.add("ndis")
     checkBtn.classList.remove("ndis")
     guessInput.classList.remove("ndis")
@@ -22,13 +27,11 @@ function generateNumbe(){
         score.textContent = parseInt(score.textContent)> 0 ?  parseInt(score.textContent) - 1 : gameEnded()
         wholeBg.classList.remove("wrg1")
         wholeBg.classList.add("wrg2")
-    }else if (generatedNumber === guessedNumber){
+    }else{
         outpuText.textContent = "Right"
         maxScore.textContent = parseInt(maxScore.textContent)<parseInt(score.textContent) ? score.textContent : maxScore.textContent
         wholeBg.classList.remove("wrg2", "wrg1")
         wholeBg.classList.add("crt")
-    }else{
-        alert("Input Number")
     }
 }
 
